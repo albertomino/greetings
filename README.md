@@ -23,8 +23,8 @@ import (
 func main() {
 	message, err := greetings.Hello("Betun")
 	if err != nil {
-		log.Fatal(err)
+        fmt.Println("Ocurrió un error: ", err)
 	}
-	fmt.Println(messages)
+	fmt.Println(message)
 }
 ```
